@@ -1,0 +1,48 @@
+#dropbtn {
+    padding: 5px;
+    cursor: pointer;
+	padding-left: 25px;
+}
+#dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: -12px;
+    top: 7px;
+    width: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 140px;
+}
+.dropdown-content b {
+	font-weight: normal;
+	cursor: pointer;
+    color: black;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content b:hover, #languages .this {
+	background-color: #f1f1f1
+}
+
+#languages {
+	position: relative;
+	display: inline-block;
+}
+#languages:hover .dropdown-content {
+    display: block;
+}
+
+/* Flags */
+.ruFlag {
+	background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+}
+.enFlag {
+	background: url('http://icons.iconarchive.com/icons/icons-land/vista-flags/16/English-Language-Flag-1-icon.png') no-repeat left center;
+}
