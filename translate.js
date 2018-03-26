@@ -1,10 +1,10 @@
 ;(function(window, document, $) {
 function Translate() {
-	Translate.languages = ['ru', 'en'];
-	Translate.languagesName = ['Русский', 'Английский'];
+	Translate.languages = ['ru', 'en', 'zh'];
+	Translate.languagesName = ['Русский', 'Английский', 'Китайский'];
 	
 	Translate.html = $('<div id="languages"></div>');
-}
+};
 
 Translate.start = function(motherTongue) {
 	if(!getCookie('MOTHER_TONGUE')) {
@@ -14,7 +14,7 @@ Translate.start = function(motherTongue) {
 		setCookie('CURRENT_LANGUAGE', getCookie('MOTHER_TONGUE'));
 		location.reload();
 	}
-}
+};
 
 Translate.run = function(element) {
 	if(getCookie('MOTHER_TONGUE') != getCookie('CURRENT_LANGUAGE')) {
@@ -34,7 +34,7 @@ Translate.run = function(element) {
 			});
 		});
 	} else $('body').show();
-}
+};
 
 Translate.getForm = function(params) {
 	var html = Translate.html;
@@ -75,14 +75,14 @@ new Translate();
 
 function setCookie(name, value) {
 	document.cookie = name + "=" + value + ';';
-}
+};
 
 function getCookie(name) {
 	var matches = document.cookie.match(new RegExp(
 	"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
 	));
 	return matches ? decodeURIComponent(matches[1]) : undefined;
-}
+};
 
 window.Translate = Translate;
 })(window, document, jQuery);
