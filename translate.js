@@ -1,7 +1,7 @@
 ;(function(window, document, $) {
 function Translate() {
-	Translate.languages = ['ru', 'en', 'zh'];
-	Translate.languagesName = ['Русский', 'Английский', 'Китайский'];
+	Translate.languages = ['ru', 'en', 'zh', 'es', 'ar', 'ja', 'ko', 'de', 'fr', 'tr', 'vi', 'it'];
+	Translate.languagesName = ['Русский', 'Английский', 'Китайский', 'Испанский', 'Арабский', 'Японский', 'Корейский', 'Немецкий', 'Французский', 'Турецкий', 'Вьетнамский', 'Итальянский'];
 	
 	Translate.html = $('<div id="languages"></div>');
 };
@@ -42,6 +42,7 @@ Translate.getForm = function(params) {
 	var currentLanguageName = Translate.getNames()[Translate.getLanguages().indexOf(currentLanguage)];
 	html.html('<div id="dropbtn" class="' + currentLanguage + 'Flag">' + currentLanguageName + '</div><div class="dropdown-content"></div>');
 	
+	if(params.languages == 'all') params.languages = Translate.getLanguages().join();
 	var languages = params.languages.split(',');
 	var names = Translate.getNames();
 	for(var i = 0; i < languages.length; i++) {
@@ -78,6 +79,7 @@ function setCookie(name, value) {
 };
 
 function getCookie(name) {
+	if(!name) return document.cookie;
 	var matches = document.cookie.match(new RegExp(
 	"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
 	));

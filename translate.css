@@ -49,3 +49,35 @@
 .zhFlag {
 	background: url('http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/16/China-Flag-icon.png') no-repeat left center;
 }
+.esFlag {
+	background: url('http://icons.iconarchive.com/icons/custom-icon-design/flat-europe-flag/16/Spain-icon.png') no-repeat left center;
+}
+.arFlag {
+	background: url('http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/16/United-Arab-Emirates-icon.png') no-repeat left center;
+}
+.jaFlag {
+	background: url('http://www.sesmik.ru/resources/img/000/000/075/img_7526.png') no-repeat left center;
+}
+.koFlag {
+	background: url('http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/16/North-Korea-Flag-icon.png') no-repeat left center;
+}
+.deFlag {
+	background-size: 16px 16px !important;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/250px-Flag_of_Germany.svg.png') no-repeat left center;
+}
+.frFlag {
+	background-size: 16px 16px !important;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Civil_and_Naval_Ensign_of_France.svg/200px-Civil_and_Naval_Ensign_of_France.svg.png') no-repeat left center;
+}
+.trFlag {
+	background-size: 16px 16px !important;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/250px-Flag_of_Turkey.svg.png') no-repeat left center;
+}
+.viFlag {
+	background-size: 16px 16px !important;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/135px-Flag_of_Vietnam.svg.png') no-repeat left center;
+}
+.itFlag {
+	background-size: 16px 16px !important;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png') no-repeat left center;
+}
